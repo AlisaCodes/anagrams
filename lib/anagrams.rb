@@ -6,7 +6,7 @@ class String
   letters = []
   final = []
 
-  compare_word = compare_word.each() do |word|
+  letters = compare_word.each() do |word|
     letters.push(word.downcase().chars().sort())
   end
 
