@@ -14,4 +14,8 @@ describe('String#anagrams') do
     expect(("apple").anagrams(["ppale", "paple"])).to(eq([["a", "e", "l", "p", "p"], ["a", "e", "l", "p", "p"]]))
   end
 
+  it("returns 'true' for each compare_word that matches target word") do
+    expect(("apple").anagrams(["ppale", "paple"])).to(eq([true, true]))
+  end
+
 end
