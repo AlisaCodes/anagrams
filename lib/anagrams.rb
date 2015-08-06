@@ -3,14 +3,21 @@ class String
 
   target_word = self.downcase().chars().sort()
 
-  new_words = []
-
+  letters = []
+  final = []
 
   compare_word = compare_word.each() do |word|
-      new_words.push(word.downcase().chars().sort())
+    letters.push(word.downcase().chars().sort())
   end
 
-  new_words
+  letters.each() do |word|
+    if word == target_word
+      final.push(true)
+    else
+      final.push(false)
+    end
+  end
 
+  final
   end
 end
